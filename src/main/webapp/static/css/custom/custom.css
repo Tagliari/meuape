@@ -1,0 +1,8 @@
+.dropdown-toggle {color:white; cursor: pointer;}
+.dropdown-menu {padding: 15px; min-width: 250px !important; margin: 15px; margin-top: 0 !important;}
+.navbar {position:absolute;}
+.main-header {height: 50px;}
+.user-panel>.info>p { white-space: normal; margin:0}
+.skin-blue .sidebar-menu>li>a {font-size:13px;}
+.iframe_video_home {width: 100%; clear: both; height: 100vh;}
+.imgFull {width: 100%;}
