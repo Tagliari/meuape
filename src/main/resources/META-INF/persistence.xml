@@ -7,9 +7,9 @@
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		
 		<!-- Openshift begin -->
-<!-- 		<jta-data-source>java:jboss/datasources/MySQLDS</jta-data-source> -->
+		<jta-data-source>java:jboss/datasources/MySQLDS</jta-data-source>
 		<!-- Openshift end -->
-		<jta-data-source>java:jboss/datasources/MysqlDS</jta-data-source>
+<!-- 		<jta-data-source>java:jboss/datasources/MysqlDS</jta-data-source> -->
 		
 		<class>com.meuap.objects.GenericAbstractObject</class>
 		<class>com.meuap.objects.building.AppartmentObject</class>
@@ -28,38 +28,37 @@
 		<class>com.meuap.objects.user.UserObject</class>
 		<class>com.meuap.objects.user.UserSegmentObject</class>
 
-		<properties>
-			    
-			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/meuap" />
-			<property name="javax.persistence.jdbc.user" value="root" />
-			<property name="javax.persistence.jdbc.password" value="" />
+<!-- 		<properties> -->
+<!-- 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" /> -->
+<!-- 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://${env.DATABASE_HOSTNAME}:${env.DATABASE_PORT}/${env.DATABASE_NAME}" /> -->
+<!-- 			<property name="javax.persistence.jdbc.user" value="${env.MYSQL_USERNAME}" /> -->
+<!-- 			<property name="javax.persistence.jdbc.password" value="${env.MYSQL_PASSWORD}" /> -->
 
-			<property name="javax.persistence.validation.mode" value="AUTO" />
+<!-- 			<property name="javax.persistence.validation.mode" value="AUTO" /> -->
 
-			<property name="hibernate.hbm2ddl.auto" value="update" />
-			<property name="hibernate.show_sql" value="true" />
-			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+<!-- 			<property name="hibernate.hbm2ddl.auto" value="update" /> -->
+<!-- 			<property name="hibernate.show_sql" value="true" /> -->
+<!-- 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" /> -->
 
-			<property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform" />
-		</properties> 
+<!-- 			<property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform" /> -->
+<!-- 		</properties>  -->
 	
 
 
 		<!-- Openshift begin -->
-<!-- 		<properties> -->
+		<properties>
 
-<!-- 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.8.48.130:3306/meuap"/> -->
-<!-- 			<property name="javax.persistence.jdbc.user" value="adminxe3yRi3"/> -->
-<!-- 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/> -->
-<!-- 			<property name="javax.persistence.jdbc.password" value="show"/> -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://${env.DATABASE_HOSTNAME}:${env.DATABASE_PORT}/${env.DATABASE_NAME}"/>
+			<property name="javax.persistence.jdbc.user" value="${env.MYSQL_USERNAME}"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.password" value="${env.MYSQL_PASSWORD}"/>
 			
-<!-- 			<property name="hibernate.hbm2ddl.auto" value="update" /> -->
-<!-- 			<property name="hibernate.show_sql" value="true" /> -->
-<!-- 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" /> -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
 			
-<!-- 			<property name="hibernate.format_sql" value="true" /> -->
-<!-- 		</properties> -->
+			<property name="hibernate.format_sql" value="true" />
+		</properties>
 		<!-- Openshift end -->
 		
 	</persistence-unit>

@@ -6,9 +6,9 @@
 	<session-factory>
 			
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="connection.password">vvnIsvluxEnW</property>
-		<property name="connection.url">jdbc:mysql://127.8.48.130:3306/meuap</property>
-		<property name="connection.username">adminxe3yRi3</property>
+		<property name="connection.password">${env.MYSQL_PASSWORD}</property>
+		<property name="connection.url">jdbc:mysql://${env.DATABASE_HOSTNAME}:${env.DATABASE_PORT}/${env.DATABASE_NAME}</property>
+		<property name="connection.username">${env.MYSQL_USERNAME}</property>
 		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 		
 		<property name="hbm2ddl.auto">update</property>
