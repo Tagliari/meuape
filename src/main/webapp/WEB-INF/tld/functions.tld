@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<description>A tag library that defines functions needed by the Compasso store applications.</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>Farm Functions</short-name>
+    <uri>http://farm.com.br/functions</uri>
+
+	<function>
+		<name>replaceFirstAndLast</name>
+		<function-class>com.farm.utils.Functions</function-class>
+		<function-signature>java.lang.String replaceFirstAndLast(java.lang.String, java.lang.String)</function-signature>
+	</function>
+	
+	<function>
+		<name>escapeHtml4</name>
+		<function-class>com.farm.utils.Functions</function-class>
+		<function-signature>java.lang.String escapeHtml4(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>unescapeHtml4</name>
+		<function-class>com.farm.utils.Functions</function-class>
+		<function-signature>java.lang.String unescapeHtml4(java.lang.String)</function-signature>
+	</function>
+	
+	<function>
+		<name>normalizeValue</name>
+		<function-class>com.farm.utils.Functions</function-class>
+		<function-signature>java.lang.String normalizeValue(java.lang.String)</function-signature>
+	</function>
+	
+</taglib>

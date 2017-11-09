@@ -1,0 +1,4 @@
+<%@ include file="/WEB-INF/taglibs.jspf"%>
+
+<c:set var="imagesUrl" value="${pageContext.request.contextPath}"/>
+<c:set var="staticUrl" value="${pageContext.request.contextPath}"/>

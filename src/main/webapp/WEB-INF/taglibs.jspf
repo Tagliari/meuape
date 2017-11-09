@@ -1,0 +1,12 @@
+<%@ page pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
+
+<%-- JSTL --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
+<%-- TAGLIARI TEMPLATE --%>
+<%@ taglib prefix="template" uri="http://template.com.br/jsp/template" %>
+
+<%@ taglib prefix="custom" tagdir="/WEB-INF/tags/custom" %>
+
