@@ -48,8 +48,8 @@
 		<!-- Openshift begin -->
 		<properties>
 
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://${env.DATABASE_HOSTNAME}:${env.DATABASE_PORT}/${env.DATABASE_NAME}"/>
-			<property name="javax.persistence.jdbc.user" value="${env.MYSQL_USERNAME}"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://${env.MYSQL_SERVICE_HOST}:${env.MYSQL_SERVICE_PORT}/${env.MYSQL_DATABASE}"/>
+			<property name="javax.persistence.jdbc.user" value="${env.MYSQL_USER}"/>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.password" value="${env.MYSQL_PASSWORD}"/>
 			
